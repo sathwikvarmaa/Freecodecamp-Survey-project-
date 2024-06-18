@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title>freeCodeCamp Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <main>
+        <label id="name-label">Name<br><input id="name" type="text" placeholder="Enter your name" required /></label><br>
+        <label id="email-label">Email<br><input id="email"type="email" placeholder="Enter your Email" required /></label><br>
+        <label id="number-label">Age<small>(optional)</small> <br><input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label><br>
+        <label> Which option best describes your current role<br>
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label><br>
+        <label> Would you recommend freeCodeCamp to a friend?</label><br>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label><br><br>
+        <label> What is your favorite feature of freeCodeCamp? <br>
+          <select id="dropdown2">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label><br>
+        <label>What would you like to see improved? <small>(Check all that apply) &nbsp; &nbsp; &nbsp; </small> </label><br>
+        <label><input type="checkbox" class="inline" value="front-end-projects" /> Front-end Projects</label><br>
+        <label><input type="checkbox" class="inline" value="back-end-projects" /> Back-end Projects</label><br>
+        <label><input type="checkbox" class="inline" value="data-visualization" /> Data visualization</label><br>
+        <label><input type="checkbox" class="inline" value="challenges" /> Challenges</label><br>
+        <label><input type="checkbox" class="inline" value="open-source-community" /> Open Source Community</label><br>
+        <label><input type="checkbox" class="inline" value="gitter-help-rooms" /> Gitter help rooms</label><br>
+        <label><input type="checkbox" class="inline" value="videos" /> Videos</label><br>
+        <label><input type="checkbox" class="inline" value="city-meetups" /> City Meetups</label><br>
+        <label><input type="checkbox" class="inline" value="wiki" /> Wiki</label><br>
+        <label><input type="checkbox" class="inline" value="forum" /> Forum</label><br>
+        <label><input type="checkbox" class="inline" value="additional-courses" /> Additional Courses</label><br><br>
+        <label> Any comments or suggestions?<br>
+          <textarea rows="5" cols="40" id = "textarea" placeholder="Enter your comment here..."></textarea>
+        </label> <br>
+        <input type="submit" value="Submit" id="submit">
+        </main>
+    </form>
+    </div>
+  </body>
+</html>
